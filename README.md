@@ -1,33 +1,61 @@
 # AI Creative Workflow Toolkit
 
-AI Creative Workflow Toolkit is a local-first open-source toolkit for creators who use AI-assisted workflows for manga, illustration, prompt design, and storyboard production.
+AI Creative Workflow Toolkit is a public, project-neutral collection of templates and workflow notes for AI-assisted manga, illustration, prompt, and storyboard production.
 
-The goal of this project is to make creative AI workflows more reproducible, inspectable, and safer for individual creators and small teams.
+This repository is intended to start small. It does not include private project files, character lore, reference images, generated outputs, imported chats, databases, local paths, API keys, or agent configuration. The initial release focuses on safe documentation and reusable creative planning templates.
 
-## Purpose
+## What This Toolkit Helps With
 
-AI-assisted creative production often involves many disconnected steps: prompt drafting, reference image management, storyboard planning, research capture, documentation, and review.
+- Planning manga pages and short visual sequences
+- Describing characters, props, locations, and style constraints in a reusable way
+- Preparing prompts for human review before using image or text generation tools
+- Keeping storyboard decisions separate from private assets and production logs
+- Documenting a safe public-release process for AI creative tools
 
-This project aims to organize those workflows into reusable tools and documents that can be maintained openly.
+## Initial Contents
 
-## Planned Features
+```text
+LICENSE
+docs/
+  roadmap.md
+  public_release_policy.md
+examples/
+  storyboard_template.md
+  prompt_asset_template.md
+```
 
-- Storyboard template generation
-- Prompt asset organization
-- Reference image workflow documentation
-- Research and AI tips capture
-- Local-first creative workflow automation
-- Codex-assisted documentation and maintenance
-- Safe development workflow templates for AI-assisted coding
+## Design Principles
 
-## Current Status
+- Keep private assets out of the public repository.
+- Prefer templates over project-specific data.
+- Make prompts reviewable before generation.
+- Separate reusable workflow structure from unpublished story material.
+- Avoid storing generated images, reference images, raw logs, imported chats, databases, or local machine configuration.
 
-This project is in early public development.
+## Non-Goals For The Initial Release
 
-The initial repository has been created for open-source development and will gradually receive safe public modules, documentation, examples, and workflow templates.
+- No application source code copied from private projects
+- No provider-specific API integration
+- No bundled model outputs
+- No character universe, story bible, or unpublished creative setting
+- No storage layer, database, import pipeline, or local agent setup
 
-Private project files, personal creative assets, API keys, generated images, and local storage data will not be included.
+## Suggested Use
+
+1. Copy this public starter set into a new repository.
+2. Review `docs/public_release_policy.md` before adding any new file.
+3. Use `examples/storyboard_template.md` for page or sequence planning.
+4. Use `examples/prompt_asset_template.md` to describe prompt assets without attaching private references.
+5. Add code only after a separate review confirms it contains no secrets, local paths, private data, or generated assets.
+
+## Repository Name
+
+Recommended public repository name:
+
+```text
+ai-creative-workflow-toolkit
+```
 
 ## License
 
-MIT License
+This starter set is released under the MIT License. See `LICENSE` for details.
